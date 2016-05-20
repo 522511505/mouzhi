@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_gray"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="实验室"
+            android:textColor="@color/tab_color"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <TableLayout
+        android:id="@+id/MorePageTableLayout_Follow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_info" >
+
+        <TableRow
+            android:id="@+id/search_teacher"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="6.0dip"
+                android:text="查找老师"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/game"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="机械室"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/schoolbus"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="查看实时校巴"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/empty_class"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="查找空课室"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/dormitory_maintenance"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="宿舍维修"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/internet_maintenance"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="网络维修"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/famous_people"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="名人堂"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

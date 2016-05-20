@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:showAsAction="always"
+        android:title="牟知"/>
+    
+    <item
+        android:id="@+id/action_plus"
+        android:actionProviderClass="cn.sacu.mouzhi.menuProvider.PlusActionProvider"
+        android:icon="@drawable/actionbar_add_icon"
+        android:showAsAction="ifRoom"
+        android:title="牟知"/>
+
+    </menu>

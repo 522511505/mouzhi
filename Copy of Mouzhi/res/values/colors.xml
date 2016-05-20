@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="light_gray">#C0C0C0</color>
+    <color name="black">#ff000000</color>
+    <color name="orange">#FFA500</color>
+    <color name="light_green">#CCFFFF</color>
+    <color name="background_gray">#F5F5F5</color>
+    <color name="transparent">#000000</color>
+    <color name="color_bg_selected">#88CCFFFF</color>
+    <color name="color_bg_normal">#87CEFA</color>
+    <color name="color_text_selected">#FF336699</color>
+    <color name="color_text_normal">#000000</color>
+    
+    <color name="tab_color">#FFFFFF</color>
+    <color name="main_color">#7DB7FC</color>
+    <color name="save_main_color">#00bfff</color>
+    <color name="red">#eb4f38</color>
+    <color name="publish_text_color">#ff000000</color>
+    <color name="button_background_color">#87CEFA</color>
+    <color name="tab_button_select">#7DB7FC</color>
+     <color name="tab_button_normal">#F5F5F5</color>
+
+</resources>

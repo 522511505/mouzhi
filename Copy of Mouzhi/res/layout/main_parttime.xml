@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/empty_cart_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+      <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="@color/main_color" >
+
+
+        <ImageView
+            android:id="@+id/parttime_search"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:src="@drawable/actionbar_search_icon"
+            android:layout_toLeftOf="@+id/titleText"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="兼职小达人"
+            android:textColor="@color/tab_color"
+            android:textSize="17sp" />
+        
+         <ImageView
+            android:id="@+id/parttime_publish"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/actionbar_add_icon"
+            android:layout_toRightOf="@+id/title"
+            />
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/srl_drop_down_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_relative"
+        android:background="#F5F5F5"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/parttime_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="50dp"
+            android:divider="#F5F5F5"
+            android:dividerHeight="8dp" 
+            >
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

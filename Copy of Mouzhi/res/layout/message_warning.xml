@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="消息提醒"
+            android:textColor="@color/tab_color"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="接受更新提醒"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="110dp"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/switch_bg"
+                android:track="@drawable/track_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="接受消息提醒"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="110dp"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/switch_bg"
+                android:track="@drawable/track_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="声音"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="110dp"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/switch_bg"
+                android:track="@drawable/track_bg" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="震动"
+                android:textColor="@color/light_gray"
+                android:textSize="14sp" />
+
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="110dp"
+                android:textOff="OFF"
+                android:textOn="ON"
+                android:thumb="@drawable/switch_bg"
+                android:track="@drawable/track_bg" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

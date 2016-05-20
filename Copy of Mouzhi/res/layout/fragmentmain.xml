@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentmain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/console_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <RadioGroup
+            android:id="@+id/main_tab_group"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/main_color"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/main_tab_news"
+                style="@style/main_tab_bottom"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_group_selector"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/news"
+                android:gravity="center"
+                android:paddingTop="1dp"
+                android:text="华农新鲜事"
+                android:textColor="@color/color_radiobutton"
+                android:tint="@android:color/holo_blue_bright"
+                android:tintMode="multiply"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/main_tab_parttime"
+                style="@style/main_tab_bottom"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_group_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/parttime"
+                android:gravity="center"
+                android:paddingTop="4dp"
+                android:text="兼职"
+                android:textColor="@color/color_radiobutton"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/main_tab_activities"
+                style="@style/main_tab_bottom"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/radio_group_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/activities"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="活动"
+                android:textColor="@color/color_radiobutton"
+                android:textSize="12sp" />
+
+            <RadioButton
+                android:id="@+id/main_tab_setting"
+                style="@style/main_tab_bottom"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/radio_group_selector"
+                android:button="@null"
+                android:drawableTop="@drawable/setting"
+                android:gravity="center"
+                android:text="设置"
+                android:textColor="@color/color_radiobutton"
+                android:textSize="12sp" />
+        </RadioGroup>
+    </LinearLayout>
+
+</RelativeLayout>

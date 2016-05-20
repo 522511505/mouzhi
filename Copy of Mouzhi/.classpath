@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry kind="lib" path="D:/新的JSON包/新建文件夹/json/commons-beanutils.jar"/>
+	<classpathentry kind="lib" path="D:/新的JSON包/新建文件夹/json/commons-collections.jar"/>
+	<classpathentry kind="lib" path="D:/新的JSON包/新建文件夹/json/commons-lang.jar"/>
+	<classpathentry kind="lib" path="D:/新的JSON包/新建文件夹/json/commons-logging.jar"/>
+	<classpathentry kind="lib" path="D:/新的JSON包/新建文件夹/json/ezmorph-1.0.6.jar"/>
+	<classpathentry kind="lib" path="D:/新的JSON包/新建文件夹/json/json-lib-2.2.3-jdk15.jar"/>
+	<classpathentry kind="lib" path="D:/新的JSON包/javajiexijson/javajiexijson/jdom.jar"/>
+	<classpathentry kind="lib" path="D:/新的JSON包/javajiexijson/javajiexijson/json.jar"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

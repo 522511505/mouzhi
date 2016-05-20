@@ -1,0 +1,91 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.scau.mouzhi.aty"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="21" />
+
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity android:name="cn.scau.mouzhi.atys.WelcomeActivity" />
+        <activity
+            android:name="cn.scau.mouzhi.config.SlashActivity"
+            android:label="哞知" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.scau.mouzhi.config.StartActivity"
+            android:label="哞知" >
+        </activity>
+        <activity android:name="cn.scau.mouzhi.atys.NewsPublish" >
+        </activity>
+        <activity android:name="cn.scau.mouzhi.atys.NewsDetail" >
+        </activity>
+        <activity android:name="cn.scau.mouzhi.atys.Regester" />
+        <activity android:name="cn.scau.mouzhi.atys.Forget_password" />
+        <activity android:name="cn.scau.mouzhi.atys.ParttimePublish" />
+        <activity android:name="cn.scau.mouzhi.atys.ActivitiesPublish" />
+        <activity android:name="cn.scau.mouzhi.atys.About" />
+        <activity android:name="cn.scau.mouzhi.atys.MessageWarning" />
+        <activity android:name="cn.scau.mouzhi.atys.Helping" />
+        <activity android:name="cn.scau.mouzhi.atys.Feedback" />
+        <activity android:name="cn.scau.mouzhi.atys.Search" />
+        <activity android:name="cn.scau.mouzhi.atys.ActivitiesDetail" />
+        <activity android:name="cn.scau.mouzhi.atys.ParttimeDetail" />
+        <activity android:name="cn.scau.mouzhi.atys.TeacherDetail" />
+        <activity android:name="cn.scau.mouzhi.atys.AtyLogin" />
+        <activity android:name="cn.scau.mouzhi.atys.Game" />
+        <activity android:name="cn.scau.mouzhi.atys.ShowGame" />
+        <activity android:name="cn.scau.mouzhi.atys.Laboratory" />
+        <activity android:name="cn.scau.mouzhi.atys.SchoolBus" />
+        <activity android:name="cn.scau.mouzhi.atys.InternetMaintenance" />
+        <activity android:name="cn.scau.mouzhi.atys.DormitoryMaintenance" />
+        <activity android:name="cn.scau.mouzhi.atys.EmptyClass" />
+        <activity android:name="cn.scau.mouzhi.atys.HelpingDetail" />
+        <activity android:name="cn.scau.mouzhi.atys.EnrollParttime" />
+        <activity android:name="com.gallery.FamousPeople" />
+        <activity
+            android:name="cn.scau.mouzhi.atys.MainActivity"
+            android:label="哞知" />
+        <activity
+            android:name="cn.scau.mouzhi.frag.ParttimeFragment"
+            android:label="兼职小达人" />
+        <activity
+            android:name="cn.scau.mouzhi.frag.NewsActivity"
+            android:label="活动社区" />
+        <activity
+            android:name="cn.scau.mouzhi.frag.ActivitiesFragment"
+            android:label="设置" />
+        <activity android:name="cn.scau.mouzhi.frag.SettingFragment" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <uses-library android:name="android.test.runner" />
+    </application>
+
+    <instrumentation
+        android:name="android.test.InstrumentationTestRunner"
+        android:targetPackage="com.example.adtest" >
+    </instrumentation>
+
+</manifest>

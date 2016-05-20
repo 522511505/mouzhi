@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+      <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="你的反馈"
+            android:textColor="@color/tab_color"
+            android:textSize="17sp" />
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/etComment"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入您的意见与建议"
+            android:textColorHint="@color/light_gray"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:maxLength="300"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/btnSendComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/ic_menu_send" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/feedback_email"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:hint="请输入您的邮箱"
+            android:textColorHint="@color/light_gray"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:maxLength="300"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingTop="30dp" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="例：新闻更新太少。
+                                                                                     兼职信息发布不及时。
+                                                                          活动社区活动无吸引力......" 
+           android:textColor="@color/light_gray"  
+           android:textSize="13sp"
+   />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+      <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="报名兼职"
+            android:textColor="@color/tab_color" />
+
+        <Button
+            android:id="@+id/enroll"
+            android:layout_width="50dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/titleText"
+            android:background="@color/main_color"
+            android:paddingStart="2dp"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:text="请如实填写如下报名信息"
+          android:layout_gravity="center_horizontal"
+          android:paddingTop="20dp"
+          android:gravity="center_horizontal"
+          android:layout_margin="10dp"
+          android:textColor="@color/black"
+          />
+      
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical" >
+
+        <EditText
+            android:id="@+id/enroll_parttime_name"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/edittext"
+            android:hint="姓名"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/light_gray"
+            android:textSize="12.0sp" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/enroll_parttime_class"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext"
+            android:hint="年级——专业——班级"
+            android:includeFontPadding="false"
+            android:inputType="text"
+            android:paddingStart="8dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/light_gray"
+            android:textSize="12.0sp" >
+        </EditText>
+        
+        <EditText
+            android:id="@+id/enroll_parttime_tel"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edittext"
+            android:hint="手机号码"
+            android:includeFontPadding="false"
+            android:inputType="number"
+            android:paddingStart="8dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:textColorHint="@color/light_gray"
+            android:textSize="12.0sp" >
+        </EditText>
+    </LinearLayout>
+    
+      <TextView
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="15dp"
+          android:text="报名后24小时内将有专人联系您进行电话面试"
+           android:gravity="center_horizontal"
+          android:layout_marginLeft="10dp"
+          android:textColor="@color/light_green"
+          />
+
+</LinearLayout>

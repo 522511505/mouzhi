@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainsetting"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/background_gray" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="我的设置"
+            android:textColor="@color/tab_color"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/account_info"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/top_relative"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF" >
+
+        <ImageView
+            android:id="@+id/widget_dface"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/widget_dface" />
+
+        <TextView
+            android:id="@+id/unLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_toRightOf="@+id/widget_dface"
+            android:gravity="center_vertical"
+            android:text="未登录"
+            android:textColor="@color/black"
+            android:textSize="14.0sp" />
+    </RelativeLayout>
+
+    
+    <TableLayout
+        android:id="@+id/MorePageTableLayout_Follow"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/account_info" >
+
+        <TableRow
+            android:id="@+id/laboratory"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="30dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="实验室"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/school"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="高校选择"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/helping"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="帮助"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/feedback"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="你的反馈"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/about"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:text="关于我们"
+                android:textColor="#ff333333"
+                android:textSize="14.0sp" />
+        </TableRow>
+        
+        <TableRow
+            android:id="@+id/exit"
+            android:layout_width="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="40dp"
+            android:background="#FFFFFF"
+            android:paddingBottom="10.0dip"
+            android:visibility="invisible"
+            android:paddingTop="9.0dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:drawablePadding="10.0dip"
+                android:gravity="center_horizontal"
+                android:includeFontPadding="false"
+                android:paddingLeft="6.0dip"
+                android:layout_marginLeft="130dp"
+                android:text="退出登录"
+                android:textColor="#EE0000"
+                android:textSize="14.0sp" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

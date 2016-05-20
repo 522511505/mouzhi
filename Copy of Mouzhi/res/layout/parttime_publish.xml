@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip" >
+
+        <ImageView
+            android:id="@+id/titleBg"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/main_color" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="新兼职注入"
+            android:textColor="@color/tab_color"
+            android:textSize="17sp" />
+        
+        <Button
+                android:id="@+id/bt_parttime_publish"
+                android:layout_width="50dp"
+                android:layout_height="33dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/titleText"
+                android:layout_marginLeft="60dp"
+                android:background="@color/button_background_color"
+                android:text="发布"
+                android:textColor="@color/black"
+                android:paddingStart="2dp"
+                android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="兼职名称"
+                android:textColor="@color/publish_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/parttime_publish_title"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/edittext"
+                android:paddingStart="5dp"
+                android:maxLength="20"
+                android:hint="请输入20个字以内的兼职名称"
+                android:textColorHint="@color/light_gray"
+                android:textColor="@color/black"
+                android:textSize="13.0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="工作时间"
+                android:textColor="@color/publish_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/parttime_publish_worktime"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:maxLength="20"
+                android:layout_marginLeft="10dp"
+               android:textColorHint="@color/light_gray"
+                android:hint="请输入20个字以内的工作时间"
+                android:background="@drawable/edittext"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="13.0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="工作地点"
+                android:textColor="@color/publish_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/parttime_publish_workplace"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:maxLength="20"
+                android:hint="请输入20个字以内的兼职地点"
+                 android:layout_marginLeft="10dp"
+            android:textColorHint="@color/light_gray"
+                android:background="@drawable/edittext"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="13.0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="工作待遇"
+                android:textColor="@color/publish_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/parttime_publish_wage"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:maxLength="20"
+                android:hint="请输入20个字以内的兼职工作待遇"
+                 android:layout_marginLeft="10dp"
+            android:textColorHint="@color/light_gray"
+                android:background="@drawable/edittext"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="13.0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="招聘人数"
+                android:textColor="@color/publish_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/parttime_publish_emnumber"
+                android:layout_width="250dp"
+                android:layout_height="30dp"
+                android:maxLength="4"
+                android:inputType="number"
+                android:hint="请直接输入招聘人数，如“10”"
+                 android:layout_marginLeft="10dp"
+            android:textColorHint="@color/light_gray"
+                android:background="@drawable/edittext"
+                android:paddingStart="5dp"
+                android:textColor="@color/black"
+                android:textSize="13.0dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="230dp"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:text="兼职具体信息"
+                android:textColor="@color/publish_text_color"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/parttime_publish_content"
+                android:layout_width="250dp"
+                android:layout_height="180dp"
+                android:background="@drawable/edittext"
+                android:paddingStart="5dp"
+                android:maxLength="200"
+                android:hint="请输入200个字以内的兼职信息"
+                 android:layout_marginLeft="10dp"
+             android:textColorHint="@color/light_gray"
+                android:textColor="@color/black"
+                android:textSize="13.0dp" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+</LinearLayout>
